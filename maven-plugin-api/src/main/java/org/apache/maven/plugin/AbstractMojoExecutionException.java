@@ -41,6 +41,17 @@ public abstract class AbstractMojoExecutionException
         super( message, cause );
     }
 
+    /**
+     * Construct a new <code>AbstractMojoExecutionException</code> exception wrapping an underlying <code>Throwable</code>.
+     *
+     * @param cause
+     * @since 3.8.2
+     */
+    public AbstractMojoExecutionException( Throwable cause ) 
+    {
+        super( cause );
+    }
+
     public String getLongMessage()
     {
         return longMessage;

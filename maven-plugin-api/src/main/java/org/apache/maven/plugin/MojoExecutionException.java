@@ -76,4 +76,16 @@ public class MojoExecutionException
     {
         super( message );
     }
+    
+    /**
+     * Construct a new <code>MojoExecutionException</code> exception wrapping an underlying <code>Throwable</code>.
+     *
+     * @param cause
+     * @since 3.8.2
+     */
+    public MojoExecutionException( Throwable cause ) 
+    {
+        super( cause );
+    }
+
 }
